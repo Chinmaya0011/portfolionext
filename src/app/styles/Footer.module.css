@@ -1,0 +1,20 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #3333332c;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  

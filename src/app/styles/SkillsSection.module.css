@@ -1,0 +1,131 @@
+/* SkillsSection.module.css */
+
+.myskill {
+    height: 70vh;
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    color: #333; /* Adjust the color as needed */
+    position: relative;
+}
+
+/* Position heading at top center */
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #333; /* Adjust the color as needed */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skillImage {
+    background-color: rgba(193, 223, 223, 0.193);
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added box-shadow transition */
+    border-radius: 8px; /* Added border radius */
+    box-shadow: 0 0 10px rgba(245, 185, 227, 0.417); /* Adjust the shadow as needed */
+    transform-style: preserve-3d; /* Specify 3D transformation */
+    perspective: 500px; /* Adjust perspective value for desired depth */
+}
+
+.skillImage:hover {
+    transform: rotateY(10deg) rotateX(-10deg); /* Adjust rotation angles as needed */
+}
+
+
+.skillName {
+    margin-top: 5px;
+    font-size: 14px; /* Adjust as needed */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .myskill {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .myskill {
+        width: 100%;
+    }
+}
+/* SkillsSection.module.css */
+
+/* Existing styles */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .myskill {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .myskill {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skillImage {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .skillImage {
+        width: 60px; /* Adjust image size for smaller screens */
+        height: 60px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skillName {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .skillName {
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+}

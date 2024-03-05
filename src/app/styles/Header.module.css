@@ -1,0 +1,113 @@
+/* Header.module.css */
+
+/* General styles */
+
+.header {
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #33333300;
+    color: #fff;
+    transition: background-color 1.3s ease;
+}
+
+.header:hover {
+    background-color: #8b5a5a60; /* Change background color on hover */
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    margin-right: 20px; /* Add margin to separate logo from other elements */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Scale up logo on hover */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 1rem;
+}
+
+.navLink {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add color transition */
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust this value as needed to position the line */
+    left: 0;
+    width: 0; /* Initial width of the line */
+    height: 3px;
+    background-color: #ff0000af; /* Initial color of the line */
+    transition: width 0.5s ease; /* Transition for width */
+}
+
+.navLink:hover::after {
+    width: 100%; /* Width of the line on hover */
+}
+
+.navLink:hover {
+    color: #08e80b; /* Change link color on hover */
+}
+
+.selected {
+    color: rgba(31, 27, 31, 0.422); /* Yellow color */
+    font-weight: bold; /* Bold font weight */
+    text-decoration: underline; /* Underline text decoration */
+    /* Add any additional styles for the selected link */
+}
+
+/* Styles for Mode component */
+
+.modeButton {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modeButton:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+    }
+    
+    .nav ul {
+        text-align: center;
+        padding: 0; /* Remove default padding */
+    }
+    
+    .nav li {
+        text-align: center;
+        margin-right: 10px; /* Remove margin between list items */
+        margin-bottom: 10px; /* Add margin bottom for spacing */
+    }
+    
+    .navLink {
+        display: block; /* Display links vertically */
+        padding: 1rem 0; /* Add padding to links */
+    }
+}

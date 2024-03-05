@@ -1,0 +1,68 @@
+/* SocialMediaLinks.module.css */
+
+.social {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+/* SocialMediaLinks.module.css */
+
+.heading {
+    font-size: 24px;
+    color: #37373d;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    text-align: center;
+}
+
+.icon {
+    margin-right: 40px; /* Adjust margin as needed */
+}
+
+/* SocialMediaLinks.module.css */
+
+.faIcon {
+    /* You can add styles to the icons themselves here */
+    /* For example, you can change the size, color, etc. */
+    font-size: 42px; /* Adjust size as needed */
+    color: #4ae428; /* Adjust color as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+border-radius: 20px;
+    /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust shadow color and size as needed */
+}
+
+/* Hover animation */
+.faIcon:hover {
+    transform: scale(1.1) rotate(15deg); /* Adjust scale and rotation as needed */
+    box-shadow: 0 0 20px rgba(36, 26, 41, 0.912); /* Adjust shadow color and size as needed */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .social {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .icon {
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .faIcon {
+        font-size: 32px; /* Adjust font-size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .icon {
+        margin-right: 10px; /* Adjust margin for even smaller screens */
+    }
+
+    .faIcon {
+        font-size: 34px; /* Adjust font-size for even smaller screens */
+    }
+}

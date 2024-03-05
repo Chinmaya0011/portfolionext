@@ -1,0 +1,124 @@
+/* HeroSection.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap");
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    min-height: auto;
+    background-color: #f5f5f500; /* Change to your desired background color */
+    padding: 10px;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 700px; /* Limit width for better readability */
+    margin-top: 20px; /* Add margin between image and content */
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-style: italic; /* Moved font-style declaration here */
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 2px 2px 10px blue; /* Corrected $blue to blue */
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.2em;
+    animation: flicker 0.5s ease-in-out infinite alternate;
+}
+
+.heroTitle:hover {
+    color: #f2a8a8;
+}
+
+.tags small {
+    @media (max-width: 768px) {
+        font-size: 0.5em;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px rgb(0, 217, 255); /* Corrected $blue to blue */
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px rgb(0, 255, 17); /* Corrected $blue to blue */
+    }
+}
+
+
+.heroDescription {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide any overflowing content */
+    animation: slideUp 2s ease-in-out infinite alternate;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+
+
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    margin: 0 10px;
+    color: #333;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcon:hover {
+    color: #ffffffa0;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.image {
+    margin-bottom: 20px; /* Add margin between image and content */
+}
+
+.profilePicture {
+    width: 300px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure image covers the entire area */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .heroContent {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    .socialIcons {
+        flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    }
+
+    .socialIcon {
+        margin: 5px; /* Adjust margin between icons for smaller screens */
+    }
+
+    .profilePicture {
+        width: 250px; /* Adjust image size for smaller screens */
+    }
+}

@@ -1,0 +1,97 @@
+/* styles/projects.module.css */
+
+/* Base styles */
+.myproject {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+.projectCard {
+    margin: 10px;
+    width:25%;
+    background-color: #f7f7f715;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+    transform-style: preserve-3d; /* Ensure children elements also have 3D effect */
+}
+
+.projectCard:hover {
+    transform: translateY(-5px) rotateX(10deg) rotateY(5deg); /* Move the card slightly up and add 3D rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
+
+.projectTitle {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.projectImage {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    height: 200px; /* Fixed height */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.projectDescription {
+    margin-bottom: 10px;
+    text-align: center; /* Center the description */
+}
+
+.buttons {
+    text-align: center;
+    margin-top: auto; /* Push the buttons to the bottom of the project card */
+}
+
+.visitButton,
+.detailsButton {
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; /* Set width of buttons */
+    height: 40px; /* Set height of buttons */
+}
+
+.visitButton:hover,
+.detailsButton:hover {
+    background-color: #27b300;
+}
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .myproject {
+      height: auto;
+    }
+    .projectCard {
+      width: 100%;
+    }
+  }
+  
