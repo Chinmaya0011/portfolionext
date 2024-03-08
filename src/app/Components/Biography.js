@@ -6,8 +6,9 @@ const Biography = () => {
     <div className={styles.biography}>
       <h2 className={styles.heading}>About Me</h2>
       <p>
-        Hello, I'm [Your Name], a passionate web developer recent graduate with a keen interest in the ever-evolving world of web development.
-      </p>
+  Hello, I&apos;m Chinmaya Kumar Mishra, a passionate web developer recent graduate with a keen interest in the ever-evolving world of web development.
+</p>
+
       <p>
         During my academic years, I gained a solid foundation in various programming languages and technologies such as HTML, CSS, JavaScript, ReactJS, Node.js, and MongoDB. I've honed my problem-solving skills through various group projects and internships.
       </p>

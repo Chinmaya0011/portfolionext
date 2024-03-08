@@ -1,7 +1,8 @@
-'use client'
-
+"use client"
 import React, { useState, useEffect } from 'react';
-import style from '../styles/github.module.css'
+import style from '../styles/github.module.css';
+import Image from 'next/image'; // Import Image component from Next.js
+
 const Git = () => {
   const username = "Chinmaya0011";
   const [user, setUser] = useState(null);
@@ -54,42 +55,41 @@ const Git = () => {
 
   return (
     <div className={style.container}>
-  {user && (
-    <div className={style.details}>
-      <h2 className={style.heading}>
-      <a style={{ textDecoration: "none" }} href={`https://github.com/${username}`} target="_blank">{user.name}</a>
+      {user && (
+        <div className={style.details}>
+          <h2 className={style.heading}>
+            <a style={{ textDecoration: "none" }} href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer">{user.name}</a>
+          </h2>
+          <Image src={user.avatar_url} alt="Avatar" width={100} height={100} />
+          <p className={style.textusername}>
+            <a style={{ textDecoration: "none" }} href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer">Username: {user.login}</a>
+          </p>
+          <p className={style.textbio}>Bio: {user.bio}</p>
+          <p className={style.textfollowers}>Followers: {user.followers}</p>
+          <p className={style.textfollowing}>Following: {user.following}</p>
+        </div>
+      )}
 
-        </h2>
-      <img src={user.avatar_url} alt="Avatar" />
-      <p className={style.textusername}>       <a style={{ textDecoration: "none" }} href={`https://github.com/${username}`} target="_blank">Username: {user.login}</a>
-</p>
-      <p className={style.textbio}>Bio: {user.bio}</p>
-      <p className={style.textfollowers}>Followers: {user.followers}</p>
-      <p className={style.textfollowing}>Following: {user.following}</p>
-    </div>
-  )}
-
-  <div className={style.repositories}>
-    <h2 className={style.heading}>Repositories:</h2>
-    <ul>
-      {repositories.map(repo => (
-        <li key={repo.id} className={style.listItem}>
-          <a href={`https://github.com/${username}/${repo.name}`} target="_blank" rel="noopener noreferrer" className={style.link}>
-            {repo.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-    {totalPages > 1 && (
-      <div className={style.pagination}>
-        <button onClick={handlePrevPage} disabled={page === 1} className={style.button}>Previous</button>
-        <span className={style.pageInfo}>Page {page} of {totalPages}</span>
-        <button onClick={handleNextPage} disabled={page === totalPages} className={style.button}>Next</button>
+      <div className={style.repositories}>
+        <h2 className={style.heading}>Repositories:</h2>
+        <ul>
+          {repositories.map(repo => (
+            <li key={repo.id} className={style.listItem}>
+              <a href={`https://github.com/${username}/${repo.name}`} target="_blank" rel="noopener noreferrer" className={style.link}>
+                {repo.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {totalPages > 1 && (
+          <div className={style.pagination}>
+            <button onClick={handlePrevPage} disabled={page === 1} className={style.button}>Previous</button>
+            <span className={style.pageInfo}>Page {page} of {totalPages}</span>
+            <button onClick={handleNextPage} disabled={page === totalPages} className={style.button}>Next</button>
+          </div>
+        )}
       </div>
-    )}
-  </div>
-</div>
-
+    </div>
   );
 };
 

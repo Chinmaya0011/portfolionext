@@ -8,9 +8,9 @@ const HeroSection = () => {
   return (
     <section className={`${style.hero} container`}>
       <div className={style.heroContent}>
-        <h1 className={style.heroTitle}>--Hi, I'm Chinmaya!--</h1>
+        <h1 className={style.heroTitle}>--Hi, I&apos;m Chinmaya!--</h1>
         <p className={style.heroDescription}>
-          I'm a Frontend Developer with a passion for Web Development. I'm excited to showcase my skills and experience through this portfolio.
+          I&apos;m a Frontend Developer with a passion for Web Development. I&apos;m excited to showcase my skills and experience through this portfolio.
         </p>
       
       </div>
