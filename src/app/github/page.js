@@ -113,7 +113,11 @@ const Git = () => {
             <div className={style.repositories}>
               <h2 className={style.heading}>Repositories:</h2>
               <ul>
+<<<<<<< HEAD
                 {repositories && repositories.map(repo => (
+=======
+                {repositories &&  repositories.map(repo => (
+>>>>>>> cebb190233629dbafcd81eed3ca31a19fb00edb1
                   <li key={repo.id} className={style.listItem}>
                     <a
                       href={`https://github.com/${yourUserName}/${repo.name}`}
