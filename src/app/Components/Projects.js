@@ -34,7 +34,7 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <Header />
+   
       <div className={style.myproject}>
         <h2 className={style.title}>Projects</h2>
         <div className={style.project}>
@@ -55,7 +55,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <Footer />
+   
     </>
   );
 }
