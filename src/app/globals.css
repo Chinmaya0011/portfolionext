@@ -3,8 +3,10 @@
 /* Default body styles */
 body {
   font-family: 'Montserrat', sans-serif; /* Choose your preferred font family */
-  background-color: rgb(82, 93, 175); /* Set the background color */
   color: #e2d3d3; /* Set the text color */
+  
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 /* Additional background and color styles */
