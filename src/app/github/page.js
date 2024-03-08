@@ -49,7 +49,7 @@ const Git = () => {
     };
 
     fetchGit();
-  }, [page, perPage, yourUserName]);
+  }, [page, perPage,yourUserName]);
 
   const handleNextPage = () => {
     if (page < totalPages) {
@@ -113,7 +113,7 @@ const Git = () => {
             <div className={style.repositories}>
               <h2 className={style.heading}>Repositories:</h2>
               <ul>
-                {repositories.map(repo => (
+                {repositories && repositories.map(repo => (
                   <li key={repo.id} className={style.listItem}>
                     <a
                       href={`https://github.com/${yourUserName}/${repo.name}`}

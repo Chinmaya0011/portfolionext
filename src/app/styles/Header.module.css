@@ -62,13 +62,12 @@
 }
 
 .navLink:hover {
-    color: #08e80b; /* Change link color on hover */
+    color: #00ff04; /* Change link color on hover */
 }
 
 .selected {
-    color: rgba(31, 27, 31, 0.422); /* Yellow color */
+    color: rgb(255, 1, 30); /* Yellow color */
     font-weight: bold; /* Bold font weight */
-    text-decoration: underline; /* Underline text decoration */
     /* Add any additional styles for the selected link */
 }
 

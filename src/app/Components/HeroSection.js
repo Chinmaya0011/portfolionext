@@ -19,13 +19,13 @@ const HeroSection = () => {
       </div>
       <div className={style.socialIcons}>
           {/* Add your social media links here */}
-          <a href="#" className={style.socialIcon}>
+          <a href="https://www.linkedin.com/in/chinmaya-kumar-mishra-24099b21b/" className={style.socialIcon} target='blank'>
             <FaLinkedin />
           </a>
-          <a href="#" className={style.socialIcon}>
+          <a href="https://github.com/Chinmaya0011" className={style.socialIcon} target='blank'>
             <FaGithub />
           </a>
-          <a href="#" className={style.socialIcon}>
+          <a href="https://twitter.com/Chinmay67358261" className={style.socialIcon} target='blank'>
             <FaTwitter />
           </a>
         </div>
