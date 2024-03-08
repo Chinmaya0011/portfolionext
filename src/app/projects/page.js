@@ -5,6 +5,8 @@ import pimg from '../../../public/hpmanagment.png';
 import pimgg from '../../../public/storehub.png'
 import pimggg from '../../../public/pokedex.png'
 import Link from 'next/link';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
  const projects = [
     {
       title: 'Pokedex App',
@@ -29,8 +31,9 @@ import Link from 'next/link';
   // Define an array of project objects
  
 
-  return (
-    <div className={style.myproject}>
+  return (<>
+  <Header/>
+  <div className={style.myproject}>
       <h2 className={style.title}>Projects</h2>
       <div className={style.project}>
         {/* Map through the projects array and render a project card for each */}
@@ -50,6 +53,9 @@ import Link from 'next/link';
         ))}
       </div>
     </div> 
+    <Footer/>
+  </>
+    
   );
 }
  // Exporting the projects data array

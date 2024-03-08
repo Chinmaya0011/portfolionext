@@ -11,7 +11,6 @@ import Certification from "./Components/Certification";
 import Contact from "./Components/Contact";
 import SocialMedia from "./Components/SocialMedia";
 import Footer from "./Components/Footer";
-import { useRouter } from "next/router";
 export default function Home() {
   return (
    <ModeProvider>
