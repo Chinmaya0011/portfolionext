@@ -3,7 +3,7 @@ import style from '../styles/about.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
-function AboutPage() {
+function About() {
   return (
     <>
       <Header/>
