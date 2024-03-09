@@ -37,3 +37,23 @@
 .responsiveDesign {
   background-color: #fdf2e9;
 }
+/* blog.module.css */
+
+.likeButton,
+.dislikeButton {
+  padding: 8px 16px;
+  background-color: #e8121d60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.likeButton:hover,
+.dislikeButton:hover {
+  background-color: #0056b3;
+}
+
+/* Add more styles as needed */
