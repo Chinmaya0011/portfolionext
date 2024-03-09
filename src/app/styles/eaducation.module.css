@@ -73,6 +73,7 @@
   @media (max-width: 768px) {
     .college {
       width: 100%;
+      height: auto;
     }
   }
   

@@ -91,6 +91,7 @@
       height: auto;
     }
     .projectCard {
+        height: auto;
       width: 100%;
     }
   }

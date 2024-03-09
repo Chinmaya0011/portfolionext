@@ -18,12 +18,6 @@ const Biography = () => {
       <p>
         As a fresher, I&apos;m eager to contribute my skills, learn from experienced professionals, and make meaningful contributions to innovative projects.
       </p>
-      <p>
-        Outside of coding, I enjoy [mention any hobbies or interests related to your personal life that you&apos;d like to share]. I believe in maintaining a healthy work-life balance.
-      </p>
-      <p>
-        I&apos;m excited about the prospect of joining a dynamic team where I can continue to learn, grow, and make a positive impact. Thank you for considering my profile.
-      </p>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 /* Biography Section Styles */
 .biography {
-    height: 70vh;
+    height: auto;
     padding: 2rem;
     max-width: 700px; /* Set a maximum width for desktop */
     margin: 0 auto; /* Center the section horizontally */
