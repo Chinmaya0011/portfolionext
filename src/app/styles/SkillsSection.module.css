@@ -82,7 +82,7 @@
 /* Media Queries */
 @media (max-width: 768px) {
     .myskill {
-        width: 80%;
+        width: 100%;
     }
 }
 

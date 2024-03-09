@@ -1,0 +1,40 @@
+/* BlogPostPreview.module.css */
+
+.blogContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blogPost {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .blogPost h2 {
+    color: #333;
+  }
+  
+  .blogPost p {
+    color: #666;
+  }
+  
+  /* Specific styles for each section */
+  .importance {
+    background-color: #eaf6ff;
+  }
+  
+  .technologies {
+    background-color: #fff5e6;
+  }
+  
+  .frameworks {
+    background-color: #e6f7ec;
+  }
+  
+  .responsiveDesign {
+    background-color: #fdf2e9;
+  }
+  
