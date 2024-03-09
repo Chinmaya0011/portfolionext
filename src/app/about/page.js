@@ -18,7 +18,7 @@ function About() {
       
       <p className={style.paragraph}>As a fresher, I&apos;m eager to contribute my skills, learn from experienced professionals, and make meaningful contributions to innovative projects.</p>
       
-      <p className={style.paragraph}>Outside of coding, I enjoy [mention any hobbies or interests related to your personal life that you&apos;d like to share]. I believe in maintaining a healthy work-life balance.</p>
+      <p className={style.paragraph}>In my free time, I enjoy exploring creative outlets like painting, writing, and solving puzzles. Engaging in these activities fuels my imagination and enhances my problem-solving skills, bringing a fresh perspective to both my personal and professional life.</p>
       
       <p className={style.paragraph}>I&apos;m excited about the prospect of joining a dynamic team where I can continue to learn, grow, and make a positive impact. Thank you for considering my profile.</p>
     </div>
