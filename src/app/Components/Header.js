@@ -22,9 +22,7 @@ const Header = () => {
           <li>
             <Link href="/projects" className={`${styles.navLink} ${selected === "projects" ? styles.selected : ""}`} onClick={() => setSelected("projects")}>Projects</Link>
           </li>
-          <li>
-            <Link href="/blog" className={`${styles.navLink} ${selected === "blog" ? styles.selected : ""}`} onClick={() => setSelected("blog")}>Blog</Link> {/* Add Blog link */}
-          </li>
+         
    
           <li>
             <Link href="/github" className={`${styles.navLink} ${selected === "github" ? styles.selected : ""}`} onClick={() => setSelected("blog")}>Git Hub</Link> {/* Add Blog link */}
